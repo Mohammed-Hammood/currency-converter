@@ -1,0 +1,128 @@
+
+.mainContainer {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    
+}
+.defaultCurrencyContainer {
+    width:50%;
+    margin-top:20px;
+
+}
+.HeaderContainer{
+    width:100%;
+    padding:0;
+    display:flex;
+    justify-content: center;
+
+}
+.leftSpan {
+    background-color: rgb(63, 63, 63);
+    padding:10px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    border-left: 1px solid silver;
+    border-radius:5px;
+    border-top-right-radius:0 ;
+    color:white;
+    border-bottom-right-radius:0 ;
+    height:40px;
+}
+.Select {
+    height:40px;
+    border-radius:5px;
+    padding:10px;
+    border:1px solid silver;
+    color:black;
+    background-color:white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;   
+    width:auto;
+
+}
+.currenciesContainer {
+    width:100%;
+    min-height:50px;
+    margin-top:20px;
+    padding:5px;
+    border-radius:10px;
+    color:black;
+    display:flex;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+.currencies {
+    border:1px solid silver;
+    padding:0;
+    background-color:white;
+    flex:1 0 230px;
+    display:block;
+    margin:10px 3px 0 3px;
+    border-radius:10px;
+    min-height:80px;
+    font-size:14px;
+    transition:box-shadow 1s;
+}
+.currencies:hover {
+    box-shadow:5px 5px 15px black;
+}
+.firstSpan {
+    background-color:silver;
+    padding:10px;
+    display:block;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width:100%;
+    top:0;
+}
+.secondSpan {
+    background-color:white;
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:10px;
+}
+
+
+@media screen and (max-width:1300px){
+    .defaultCurrencyContainer {
+        width:70%;
+    
+    }
+}
+
+@media screen and (max-width:1100px){
+    .defaultCurrencyContainer {
+        width:80%;
+    
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .defaultCurrencyContainer {
+        width:95%;
+    
+    }
+}
+@media screen and (max-width:370px){
+    .leftSpan {
+        font-size:12px;
+        padding:8px;
+        display:flex;
+        align-items:center;
+
+    }
+    .Select {
+        height:40px;
+        font-size:12px;
+        padding:8px;
+        
+    }
+    .firstSpan, .secondSpan {
+        font-size:12px;
+    }
+}
+
