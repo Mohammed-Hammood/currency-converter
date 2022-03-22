@@ -1,4 +1,4 @@
-const CurrenciesObject = {
+export const CurrenciesObject = {
         AFN:"Afghan Afghani", 
         ALL:"Albanian Lek", 
         DZD:"Algerian Dinar", 
@@ -152,28 +152,8 @@ const CurrenciesObject = {
         ZMW:"Zambian Kwacha"
 };
 
-const DefaultValues = (defaultCurrency, fromCurreny, toCurrency)=> {
-    if(defaultCurrency !== "" && fromCurreny == "" && toCurrency === ""){
-        localStorage.setItem("defaultCurrency", defaultCurrency);
-    }
-    else if (fromCurreny !== "" && toCurrency !== ""){
-        localStorage.setItem("fromCurreny", fromCurreny);
-        localStorage.setItem("toCurrency", toCurrency);
-    }
-    else {
-       if(localStorage.getItem("defaultCurrency") === null){
-           localStorage.setItem("defaultCurrency", "RUB");
-           localStorage.setItem("fromCurreny", "RUB");
-           localStorage.setItem("toCurrency", "USD");
-        }
 
-        return [localStorage.getItem("defaultCurrency"),
-                localStorage.getItem("fromCurreny"), 
-                localStorage.getItem("toCurrency"),
-            ];
-    }
-}
-const CurrenciesOptions = (container_id) => {
+export const CurrenciesOptions = (container_id) => {
     const container = document.getElementById(container_id);
     let content = ``;
     for(let [key, value] of Object.entries(CurrenciesObject)){
@@ -182,5 +162,3 @@ const CurrenciesOptions = (container_id) => {
         }
     container.innerHTML = content;
 };
-
-export {DefaultValues,  CurrenciesOptions, CurrenciesObject};

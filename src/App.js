@@ -2,8 +2,7 @@ import NavBar from "./components/navBar";
 import {Routes, Route} from "react-router-dom";
 import Home from "./components/page-1";
 import AllCurrencies from "./components/page-2";
-import "./components/css/main.scss";
-
+import "./styling/main.scss";
 function App(){
     return (<div>
         <NavBar />
@@ -13,5 +12,4 @@ function App(){
         </Routes>
     </div>)
 }
-
 export default App;

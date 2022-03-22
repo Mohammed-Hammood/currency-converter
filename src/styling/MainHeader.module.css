@@ -4,6 +4,8 @@
     background-color:black;
     opacity: 0.9;
     padding: 0 10%;
+    position: fixed;
+    top:0;
   }
   
   .header nav {
