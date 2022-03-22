@@ -89,7 +89,10 @@
 @media screen and (max-width:1300px){
     .defaultCurrencyContainer {
         width:70%;
-    
+        font-size: 12px;
+    }
+    .Select {
+        font-size: 12px;
     }
 }
 
