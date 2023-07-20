@@ -4,5 +4,4 @@ A web app in Reactjs to convert foreign currencies using free API.
 - Reactjs<br>
 - React Routing V6<p></p>
 - It uses free API.<br>
-Application on:[ https://currency-converter-2.herokuapp.com/
-](https://currency-converter-reactapp.vercel.app/)https://currency-converter-reactapp.vercel.app/
+Application on: (https://currency-converter-reactapp.vercel.app/)https://currency-converter-reactapp.vercel.app/
